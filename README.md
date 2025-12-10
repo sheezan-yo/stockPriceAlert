@@ -81,3 +81,26 @@ A full-stack stock monitoring tool that lets users track live stock prices, set 
 - Profile information + theme controls
 
 
+## 🧪 Demo Guide
+
+Follow these steps to run the Stock Price Alert System locally.
+
+---
+
+### 1️⃣ Create Environment Files (Required)
+
+#### 📌 Create `.env` (inside `/backend`)
+- containing PORT, MONGODB_URI, JWT_SECRET, FINNHUB_API_KEY, ALPHA_VANTAGE_API_KEY
+
+### 2️⃣ Start the Backend Server
+- cd backend
+- npm install
+- npm start
+- API will be running at: http://localhost:PORT
+
+### 3️⃣ Start the Frontend
+- cd frontend
+- npm install
+- npm run dev
+- Front-end will be served at: http://localhost:5173 (usually)
+- Great, now you can explore the app's functionalities
