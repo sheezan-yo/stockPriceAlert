@@ -3,12 +3,11 @@ import { getPriceHistory, getStockDetails, getSymbols, searchSymbols } from '../
 
 const priceRouter = express.Router();
 
+alertRouter.use(protect);
+
 priceRouter.get('/', getSymbols);
-
 priceRouter.get('/search', searchSymbols);
-
 priceRouter.get('/history', getPriceHistory);
-
 priceRouter.get('/:symbol', getStockDetails);
 
 export default priceRouter;
