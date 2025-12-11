@@ -1,9 +1,10 @@
 import express from 'express';
+import protect from '../middleware/authMiddleware.js';
 import { getPriceHistory, getStockDetails, getSymbols, searchSymbols } from '../controllers/priceController.js';
 
 const priceRouter = express.Router();
 
-alertRouter.use(protect);
+priceRouter.use(protect);
 
 priceRouter.get('/', getSymbols);
 priceRouter.get('/search', searchSymbols);
